@@ -37,6 +37,12 @@
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
 </ul>
 
+<form action="http://baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
 
 <ul class="main-navigation">
       <li class="active">
@@ -98,6 +104,9 @@
 </div>
 <aside class="sidebar">
   <section>
+	  <img src="/theme/images/favicon.png" alt="" width=""/> 
+  </section>
+  <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
@@ -126,11 +135,38 @@
     <a href="/tag/python.html">python</a>,    <a href="/tag/pelican.html">pelican</a>,    <a href="/tag/markdown.html">markdown</a>,    <a href="/tag/publishing.html">publishing</a>  </section>
 
 
+
+  <section>
+    <h1>GitHub Repos</h1>
+    <ul id="gh_repos">
+      <li class="loading">Status updating...</li>
+    </ul>
+      <a href="https://github.com/chensp-bhdc">@chensp-bhdc</a> on GitHub
+    <script type="text/javascript">
+      $.domReady(function(){
+          if (!window.jXHR){
+              var jxhr = document.createElement('script');
+              jxhr.type = 'text/javascript';
+              jxhr.src = '/theme/js/jXHR.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(jxhr, s);
+          }
+
+          github.showRepos({
+              user: 'chensp-bhdc',
+              count: 5,
+              skip_forks: false,
+              target: '#gh_repos'
+          });
+      });
+    </script>
+    <script src="/theme/js/github.js" type="text/javascript"> </script>
+  </section>
+
     <section>
         <h1>Social</h1>
         <ul>
-            <li><a href="#" target="_blank">You can add links in your config file</a></li>
-            <li><a href="#" target="_blank">Another social link</a></li>
+            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=1016395220&site=chensp&menu=yes" target="_blank">QQ联系</a></li>
         </ul>
     </section>
     <section>
