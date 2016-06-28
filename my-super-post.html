@@ -18,9 +18,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link href="/favicon.png" rel="icon">
+    <link href="./favicon.png" rel="icon">
 
-  <link href="/theme/css/main.css" media="screen, projection"
+  <link href="./theme/css/main.css" media="screen, projection"
         rel="stylesheet" type="text/css">
 
   <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
@@ -31,25 +31,25 @@
 
 <body>
   <header role="banner"><hgroup>
-  <h1><a href="/">LifeStyle</a></h1>
+  <h1><a href="./">LifeStyle</a></h1>
     <h2>简约&LifeStyle</h2>
 </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
 </ul>
 
-<form action="http://baidu.com/search" method="get">
+<form action="http://baidu.com/baidu" method="get">
   <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="">
+    <input type="hidden" name="sitesearch" value=".">
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
 
 <ul class="main-navigation">
       <li >
-        <a href="/category/pelican.html">Pelican</a>
+        <a href="./category/pelican.html">Pelican</a>
       </li>
       <li class="active">
-        <a href="/category/python.html">Python</a>
+        <a href="./category/python.html">Python</a>
       </li>
 </ul></nav>
   <div id="main">
@@ -57,6 +57,17 @@
 <div>
   <article class="hentry" role="article">
 <header>
+    
+    <div id="qr-code-my-super-post.html" class="qr-code-image-block"></div>
+    <script src="./theme/js/qr.min.js" type="text/javascript"></script>
+    <script>
+        var img = qr.image({
+            value: './my-super-post.html',
+            level: 'L',
+            size: 4
+        });
+        document.getElementById('qr-code-my-super-post.html').appendChild(img);
+    </script>
       <h1 class="entry-title">My super title</h1>
     <p class="meta">
 <time datetime="2010-12-03T10:20:00+08:00" pubdate>周五 03 十二月 2010</time>    </p>
@@ -71,30 +82,34 @@
     </span>
   </span>
 <time datetime="2010-12-03T10:20:00+08:00" pubdate>周五 03 十二月 2010</time>  <span class="categories">
-    <a class='category' href='/category/python.html'>Python</a>
+    <a class='category' href='./category/python.html'>Python</a>
   </span>
   <span class="categories">
-    <a class="category" href="/tag/pelican.html">pelican</a>,    <a class="category" href="/tag/publishing.html">publishing</a>  </span>
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
 </p><div class="sharing">
 </div>    </footer>
   </article>
 
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
 </div>
 <aside class="sidebar">
   <section>
-	  <img src="/theme/images/favicon.png" alt="" width=""/> 
+	  <img src="./theme/images/favicon.png" alt="" width=""/> 
   </section>
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="/pelican-geng-huan-zhu-ti.html">Pelican 更换主题</a>
+          <a href="./pelican-geng-huan-zhu-ti.html">Pelican 更换主题</a>
       </li>
       <li class="post">
-          <a href="/pelican-quickstart.html">Pelican Quickstart</a>
+          <a href="./pelican-quickstart.html">Pelican Quickstart</a>
       </li>
       <li class="post">
-          <a href="/my-super-post.html">My super title</a>
+          <a href="./my-super-post.html">My super title</a>
       </li>
     </ul>
   </section>
@@ -102,15 +117,15 @@
       
     <h1>Categories</h1>
     <ul id="recent_posts">
-        <li><a href="/category/pelican.html">Pelican</a></li>
-        <li><a href="/category/python.html">Python</a></li>
+        <li><a href="./category/pelican.html">Pelican</a></li>
+        <li><a href="./category/python.html">Python</a></li>
     </ul>
   </section>
  
 
   <section>
   <h1>Tags</h1>
-    <a href="/tag/python.html">python</a>,    <a href="/tag/pelican.html">pelican</a>,    <a href="/tag/markdown.html">markdown</a>,    <a href="/tag/publishing.html">publishing</a>  </section>
+    <a href="./tag/python.html">python</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/markdown.html">markdown</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
 
 
 
@@ -125,7 +140,7 @@
           if (!window.jXHR){
               var jxhr = document.createElement('script');
               jxhr.type = 'text/javascript';
-              jxhr.src = '/theme/js/jXHR.js';
+              jxhr.src = './theme/js/jXHR.js';
               var s = document.getElementsByTagName('script')[0];
               s.parentNode.insertBefore(jxhr, s);
           }
@@ -138,7 +153,7 @@
           });
       });
     </script>
-    <script src="/theme/js/github.js" type="text/javascript"> </script>
+    <script src="./theme/js/github.js" type="text/javascript"> </script>
   </section>
 
     <section>
@@ -163,8 +178,19 @@
     Copyright &copy;  2010&ndash;2016  ChenSP &mdash;
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
-  <script src="/theme/js/modernizr-2.0.js"></script>
-  <script src="/theme/js/ender.js"></script>
-  <script src="/theme/js/octopress.js" type="text/javascript"></script>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = 'chensp';
+    var disqus_identifier = '/my-super-post.html';
+    var disqus_url = './my-super-post.html';
+    var disqus_title = 'My super title';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
 </body>
 </html>
